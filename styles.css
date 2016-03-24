@@ -1,0 +1,199 @@
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+  color: #111;
+  background: url('svgs/background.svg') #edeff0;
+  background-size: 3em;
+}
+
+#container {
+  max-width: 960px;
+  background: #fff;
+  margin: 0 auto;
+}
+
+p {
+  max-width: 350px;
+  margin: 35px auto 0;
+  line-height: 2em;
+  text-align: left;
+}
+
+a {
+  text-decoration: none;
+  color: #39add1;
+  font-weight: 700;
+  }
+  a:hover {
+    color: #111;
+    transition: .4s;
+  }
+
+header {
+  padding-top: 10px;
+}
+  header nav {
+    padding-bottom: 50px;
+    text-align: left;
+  }
+  header nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  header h1 {
+    line-height: 1em;
+  }
+
+  #logo-text-h1 {
+    display: none;
+  }
+
+main {
+  padding-top: 50px;
+}
+  main h2 {
+  font-size: 28px;
+}
+  main ul {
+    padding: 0;
+  }
+    main li {
+      display: inline-block;
+      color: #ba8058;
+      margin-right: 20px;
+    }
+      main li img {
+        margin-bottom: 15px;
+        height: 200px;
+        width: 200px;
+      }
+      main li span {
+        margin-left: -40px;
+      }
+      main li:last-child {
+        margin-right: 0;
+      }
+
+footer {
+  width: 100%;
+  margin-top: 100px;
+  padding-bottom: 30px;
+  color: #ba8058;
+}
+
+/* Keyframes
+==================================== */
+
+@keyframes scale-elipse {
+  0% {
+    transform: scale(0);
+  }
+
+  30% {
+    transform: scale(1.2);
+  }
+
+  60% {
+    transform: scale(1);
+  }
+}
+
+@keyframes draw-text {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fill {
+  100% {
+    fill: #F4C6A6;
+  }
+}
+
+/* SVG Styles
+==================================== */
+
+#site-logo * {
+  transform-origin: 50% 50%;
+}
+
+.logo-bg {
+  animation: scale-elipse .7s ease-out backwards;
+}
+
+.paw-print path {
+  fill: transparent;
+  stroke: #F4C6A6;
+  stroke-width: 3;
+  stroke-dasharray: 140;
+  stroke-dashoffset: 140;
+  animation: draw-text 1s .4s linear forwards, fill .8s 1.2s forwards;
+}
+
+svg {
+  width: 215px;
+  height: 215px;
+}
+
+nav svg {
+  height: 13px;
+  width: 13px;
+}
+
+nav .st0 {
+  fill: #39add1;
+}
+
+/* Coat Colors */
+.snout{
+  fill:#FBFEFF;
+}
+
+.eyes-nose{
+  fill:#2D3339;
+}
+
+.red-fur,
+.sable-brows,
+.black-tan-brows {
+  fill:#BA8058;
+}
+
+.red-brows,
+.fawn-fur {
+  fill:#EAAA7F;
+}
+
+  /* Fawn */
+
+  .fawn-brows {
+    fill:#F4C6A6;
+  }
+
+  /* Sable */
+
+  .sable-fur {
+    fill:#844B24;
+  }
+
+  /* Black and Tan */
+
+	.black-tan-fur {
+    fill:#52595F;
+  }
+
+/* Media Queries
+==================================== */
+
+@media screen and (max-width: 420px) {
+  #logo-text-h1 {
+    display: block;
+  }
+
+  .logo-text {
+    display: none;
+  }
+}
