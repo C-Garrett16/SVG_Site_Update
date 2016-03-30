@@ -115,12 +115,14 @@ nav svg {
   fill: #2D3339;
 }
 
+.logo-bg,
 .red-fur,
 .sable-brows,
 .black-tan-brows {
   fill: #BA8058;
 }
 
+.logo-text,
 .red-brows,
 .fawn-fur {
   fill: #EAAA7F;
@@ -128,6 +130,7 @@ nav svg {
 
   /* Fawn */
 
+  .paw-print-color,
   .fawn-brows {
     fill: #F4C6A6;
   }
