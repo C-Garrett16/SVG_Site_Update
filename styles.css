@@ -29,7 +29,7 @@ a {
   }
 
   a:hover,
-  .nav-svg:hover {
+  a:hover path {
     fill: #111;
     color: #111;
     transition: .4s;
